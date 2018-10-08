@@ -43,7 +43,6 @@ regexp.source; // 字面量正则表达式中的模式部分，/aaa/
 // Regexp 实例方法
 
 
-
 // exec 专门为捕获组而设计的
 // 可以匹配字符串 ? resultArray : null
 const matches = /(hello) (world)/.exec('This is a hello world!');
@@ -67,7 +66,6 @@ do {
 // 下次正则匹配源字符串的开始位置, 子字符串在源字符串的位置, 子字符串
 // 4, 0, aaab
 // 13, 9, aaad
-
 
 
 // test，判断正则表达式是否与字符串匹配，若匹配返回true，否则返回false
