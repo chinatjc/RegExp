@@ -1,5 +1,7 @@
 // javascript 中 正则表达式 的基础知识
 
+
+
 // 表达式
 const expression = / pattern / flags;
 
@@ -12,6 +14,8 @@ regexp.exec(`aaa\naab`); // ["aaa", index: 0, input: "aaa↵aab", groups: undefi
 regexp.exec(`aaa\naab`); // ["aab", index: 4, input: "aaa↵aab", groups: undefined]
 regexp.exec(`aaa\naab`); // null
 
+
+
 // RegExp 类型
 // 1. 字面量
 const regexp = /aaa/g;
@@ -23,6 +27,8 @@ const regexp = new RegExp('aaa', 'g');
 const regexp = /\.js/;
 const regexp = new RegExp('\\.js');
 
+
+
 // RegExp 实例属性
 const regexp = /aaa/gim;
 
@@ -32,7 +38,10 @@ regexp.multiline; // 是否设置了 多行匹配 标志，true
 regexp.lastIndex; // 从源字符串的哪个位置开始匹配，默认为0
 regexp.source; // 字面量正则表达式中的模式部分，/aaa/
 
+
+
 // Regexp 实例方法
+
 
 // exec 专门为捕获组而设计的
 // 可以匹配字符串 ? resultArray : null
@@ -69,6 +78,7 @@ const regexp2 = new RegExp('^\\d{3}-\\d{4}-\\d{4}$', 'gi');
 
 regexp1.toString() === regexp2.toString();
 // /^\d{3}-\d{4}-\d{4}$/gi, /^\d{3}-\d{4}-\d{4}$/gi true
+
 
 
 // RegExp构造函数 的属性
